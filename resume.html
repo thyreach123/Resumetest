@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyreach Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/687d477f45.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Introduction</p>
+            <h1>header to put in later</h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------------------------------About Section-------------------------------------- -->
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src=""> <!-- add image  --> 
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>everthing to write about myself later on after fucing edit</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentabe('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentabe('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentabe('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills"><!--write about goddamn SKILL-->
+                    <ul>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                    </ul>
+                </div><div class="tab-contents" id="experience"><!--write about goddamn EXPERIENCE-->
+                    <ul>
+                        <li><span>2021</span><br>Web Design Front-end</li>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                    </ul>
+                </div><div class="tab-contents" id="education"><!--write about goddamn EDUCATION-->
+                    <ul>
+                        <li><span>2018</span><br>Graduated from Beltei Internationl School</li>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                        <li><span>UI/UX</span><br>Web Design Front-end</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------Service---------------------------------------------->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>jsladjfljkdsjfsajflkjflskadjflksdajflsad
+                    jflkjfioefnobvuoehgusnv,xzmv auowdf</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>jsladjfljkdsjfsajflkjflskadjflksdajflsadj
+                    flkjfioefnobvuoehgusnv,xzmv auowdf</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>jsladjfljkdsjfsajflkjflskadjflksdajflsadj
+                    flkjfioefnobvuoehgusnv,xzmv auowdf</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!----------------portfilo------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <h3>Under Construction</h3>
+            <div class="tenor-gif-embed" data-postid="25794812" data-share-method="host" data-aspect-ratio="2.99065" data-width="100%"><a href="https://tenor.com/view/excited-gif-25794812">Excited GIF</a>from <a href="https://tenor.com/search/excited-gifs">Excited GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+    </div>
+</div>
+<!--------------Contact----------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>yunsokunthyreach@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>016367068</p>
+                <div class="social-icon">
+                   <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="image/my-cv.pdf.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!------------------------JavaScript----------------------------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentabe(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemen.style.right = "0"
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px"
+    }
+
+</script>
+
+</body>
+</html>
